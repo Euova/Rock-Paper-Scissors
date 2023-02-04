@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel = "stylesheet" href = "style.css">    
+    <script src="script.js" defer></script>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-
-    
-    <script src="script.js"></script>
+    <div class = "container">
+        <h2 class="decision">Rock Paper Scissors</h2>
+        <h2 class="status">First to 5 points wins!</h2>
+        <div class="scoreBoard">             
+            <div class = "playerStats">                  
+                <h3 class = "playerChoice">❔</h3>
+                <h3 class="pScore" id="score">Player: 0</h3>
+            </div> 
+            <div class = "computerStats"> 
+                <h3 class = "computerChoice">❔</h3>                
+                <h3 class="cScore" id="score">Computer: 0</h3>
+            </div>       
+        </div>
+        <div class = "choices">
+            <button class = "rock">
+                <img src="images/rock.png" class = "rock">
+            </button>
+            <button class = "paper">
+                <img src="images/paper.png" class = "paper">
+            </button>
+            <button class = "scissors">
+                <img src="images/scissors.png" class = "scissors">
+            </button>
+        </div>
+    </div>
+    <div class="overlay">
+        <div class="endBox">
+            <h2 class="result"></h2>
+            <button class="restart">Play Again!</button>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,105 @@
+body{
+    background-color: #111827;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.scoreBoard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    /* flex-direction: column; */
+    width: 25%;
+}
+.computerStats,.playerStats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    font-size: 80px;
+}
+.computerChoice,.playerChoice{
+    font-size: 40px;
+}
+h2{
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+h3{
+    align-text: center;
+    font-size: 25px;
+    color: white;
+}
+.choices button{
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    background-color: #1A2335;
+    border: 0;
+    border-radius: 10%;
+}
+img{
+    width: auto;
+    height: 200px;
+}
+.rockpic{
+    background-image: url('images/rock.png');
+
+    height: 150px;
+    width: 150px;
+}
+button:hover{
+    cursor: pointer;
+}
+#score{
+    color: white;
+    font-weight: bold;
+}
+.decision,.status{
+    color: white;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.endBox{
+    display: none;    
+    position: fixed;    
+    text-align: center;
+    background-color: #111827;
+    width: 250px;
+    padding: 30px;
+    z-index: 2;
+    border-radius: 10px;
+}
+.result{
+    color: white;
+    margin: 0 0 30px 0;
+}
+.restart{
+    padding: 20px 40px;
+    color: white;
+    background-color: #1A2335;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
