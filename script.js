@@ -53,6 +53,7 @@ function playRound(computerSelection, playerSelection){
     if (computerSelection == "rock" && playerSelection == "paper"){
         playerChoice.textContent = "✋";
         computerChoice.textContent = "✊";
+        playerScore++;
         showDecision.textContent = "You Win!";
         showStatus.textContent = "Paper beats Rock";
 
@@ -132,7 +133,10 @@ function restartGame(){
     overlay.style.cssText = "display: none;";
     pScore.textContent = `Player:  ${playerScore}`;
     cScore.textContent = `Computer: ${computerScore}`;
+    showStatus.textContent = "First to 5 points wins!";
     showDecision.textContent = "Rock Paper Scissors";
+    playerChoice.textContent = "❔";
+    computerChoice.textContent = "❔";
 }
 
 
