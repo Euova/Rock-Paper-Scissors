@@ -55,10 +55,7 @@ function playRound(computerSelection, playerSelection){
         computerChoice.textContent = "✊";
         playerScore++;
         showDecision.textContent = "You Win!";
-        showStatus.textContent = "Paper beats Rock";
-
-        // return "You Win! Paper beats Rock";
-        
+        showStatus.textContent = "Paper beats Rock";     
     }
     else if (computerSelection == "paper" && playerSelection == "scissors"){
         playerChoice.textContent = "✌";
@@ -66,8 +63,6 @@ function playRound(computerSelection, playerSelection){
         playerScore++;
         showDecision.textContent = "You Win!";
         showStatus.textContent = "Scissors beats Paper";
-        // return "You Win! Scissors beats Paper";
-        
     }
     else if (computerSelection == "scissors" && playerSelection == "rock"){
         playerChoice.textContent = "✊";
@@ -75,8 +70,6 @@ function playRound(computerSelection, playerSelection){
         playerScore++;
         showDecision.textContent = "You Win!";
         showStatus.textContent = "Rock beats Scissors";
-        // return "You Win! Rock beats Scissors";
-        
     }
 
     else if (computerSelection == "rock" && playerSelection == "rock"){
@@ -84,21 +77,18 @@ function playRound(computerSelection, playerSelection){
         computerChoice.textContent = "✊";
         showDecision.textContent = "Draw!";
         showStatus.textContent  = "Rock with Rock";
-        // return "Draw! Rock with Rock";
     }    
     else if (computerSelection == "paper" && playerSelection == "paper"){
         playerChoice.textContent = "✋";
         computerChoice.textContent = "✋";
         showDecision.textContent = "Draw!";
         showStatus.textContent  = "Paper with Paper";
-        // return "Draw! Paper with Paper";
     }
     else if (computerSelection == "scissors" && playerSelection == "scissors"){
         playerChoice.textContent = "✌";
         computerChoice.textContent = "✌";
         showDecision.textContent = "Draw!";
         showStatus.textContent  = "Scissors with Scissors";
-        // return "Draw! Scissors with Scissors";
     }
 
     else if (computerSelection == "scissors" && playerSelection == "paper"){
@@ -107,7 +97,6 @@ function playRound(computerSelection, playerSelection){
         computerScore++;
         showDecision.textContent = "You Lose!";
         showStatus.textContent  = "Paper beaten by Scissors";
-        // return "You Lose! Scissors beats Paper";
     }
     else if (computerSelection == "rock" && playerSelection == "scissors"){
         playerChoice.textContent = "✌";
@@ -115,7 +104,6 @@ function playRound(computerSelection, playerSelection){
         computerScore++;
         showDecision.textContent = "You Lose!";
         showStatus.textContent  = "Scissors beaten by Rock";
-        // return "You Lose! Rock beats Scissors";
     }
     else if (computerSelection == "paper" && playerSelection == "rock"){
         playerChoice.textContent = "✊";
@@ -123,7 +111,6 @@ function playRound(computerSelection, playerSelection){
         computerScore++;
         showDecision.textContent = "You Lose!";
         showStatus.textContent  = "Rock beaten by Paper";
-        // return "You Lose! Paper beats Rock";
     }
 }
 
